@@ -1,0 +1,25 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type": "minecraft:player",
+		"equipment": {
+			"mainhand": {
+				"items": [
+					"minecraft:wooden_pickaxe",
+					"minecraft:stone_pickaxe",
+					"minecraft:golden_pickaxe",
+					"minecraft:iron_pickaxe",
+					"minecraft:diamond_pickaxe",
+					"minecraft:netherite_pickaxe"
+				],
+				"enchantments": [
+					{
+						"enchantment": "minecraft:silk_touch",
+						"levels": 1
+					}
+				]
+			}
+		}
+	}
+}
