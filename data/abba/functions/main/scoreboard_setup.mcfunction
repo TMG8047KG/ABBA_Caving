@@ -1,5 +1,6 @@
-#main scoreboards
+#main scoreboards (dummy scoreboards)
 scoreboard objectives add Leaderboard dummy
+scoreboard objectives add timer dummy
 
 #Saving the points in dummy scoreboards
 scoreboard objectives add p_coal dummy
@@ -10,6 +11,8 @@ scoreboard objectives add p_diamond dummy
 scoreboard objectives add p_redstone dummy
 scoreboard objectives add p_lapis dummy
 scoreboard objectives add p_emerald dummy
+
+
 
 #Scoreboards that counts the mined ores
 scoreboard objectives add b_coal mined:coal_ore

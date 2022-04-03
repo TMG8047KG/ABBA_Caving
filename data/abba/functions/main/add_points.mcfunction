@@ -51,4 +51,4 @@ execute as @a[scores={b_coal=1..}] run scoreboard players reset @s b_coal
 execute as @a[scores={b_d_coal=1..}] run scoreboard players reset @s b_d_coal
 
 #execute the function every tick
-schedule function abba:add_points 1t
+schedule function abba:main/add_points 1t
