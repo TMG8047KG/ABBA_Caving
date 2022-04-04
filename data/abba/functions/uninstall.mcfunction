@@ -2,6 +2,7 @@
 scoreboard objectives remove host
 scoreboard objectives remove Leaderboard
 scoreboard objectives remove timer
+scoreboard objectives remove start_timer
 
 #deleting all points saves
 scoreboard objectives remove p_coal
@@ -60,4 +61,6 @@ scoreboard objectives remove emerald
 schedule clear abba:triggers/activate_triggers
 schedule clear abba:main/add_points
 schedule clear abba:setup_trigger
-#schedule clear abba:main/
+schedule clear abba:config/points/if_changes
+schedule clear abba:main/start
+schedule clear abba:main/timer

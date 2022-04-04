@@ -10,4 +10,5 @@ function abba:triggers/setup_triggers
 function abba:main/add_points
 
 #Config Panel
-function abba:config/config
+function abba:config/points/if_changes
+function abba:config/points/default

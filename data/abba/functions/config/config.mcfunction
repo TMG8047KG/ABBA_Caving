@@ -2,4 +2,19 @@
 #Config Panel
 #========================
 
-tellraw @a[tag=abba_host] {"text": "========================================"}
+tellraw @a[tag=abba_host] {"text": "========================================","color": "#474056"}
+tellraw @a[tag=abba_host] {"text": "            ABBA CAVING PACK", "color": "#757083"}
+tellraw @a[tag=abba_host] {"text": "========================================","color": "#474056"}
+tellraw @a[tag=abba_host] [{"text": "Points per coal ore: ","color": "#ABA9BF"},{"score":{"name": "coal","objective": "coal"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger coal add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger coal add 1"}}]
+tellraw @a[tag=abba_host] [{"text": "Points per copper ore: ","color": "#ABA9BF"},{"score":{"name": "copper","objective": "copper"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger copper add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger copper add 1"}}]
+tellraw @a[tag=abba_host] [{"text": "Points per iron ore: ","color": "#ABA9BF"},{"score":{"name": "iron","objective": "iron"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger iron add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger iron add 1"}}]
+tellraw @a[tag=abba_host] [{"text": "Points per gold ore: ","color": "#ABA9BF"},{"score":{"name": "gold","objective": "gold"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger gold add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger gold add 1"}}]
+tellraw @a[tag=abba_host] [{"text": "Points per redstone ore: ","color": "#ABA9BF"},{"score":{"name": "redstone","objective": "redstone"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger redstone add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger redstone add 1"}}]
+tellraw @a[tag=abba_host] [{"text": "Points per lapis ore: ","color": "#ABA9BF"},{"score":{"name": "lapis","objective": "lapis"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger lapis add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger lapis add 1"}}]
+tellraw @a[tag=abba_host] [{"text": "Points per diamond ore: ","color": "#ABA9BF"},{"score":{"name": "diamond","objective": "diamond"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger diamond add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger diamond add 1"}}]
+tellraw @a[tag=abba_host] [{"text": "Points per emerald ore: ","color": "#ABA9BF"},{"score":{"name": "emerald","objective": "emerald"},"color": "gold"},{"text": " [-1]","color": "dark_red","clickEvent": {"action": "run_command","value": "/trigger emerald add -1"}},{"text": " [+1]","color": "dark_green","clickEvent": {"action": "run_command","value": "/trigger emerald add 1"}}]
+tellraw @a[tag=abba_host] {"text": "========================================","color": "#474056"}
+tellraw @a[tag=abba_host] {"text": "[Default]","color": "#ABA9BF","clickEvent": {"action": "run_command","value": "/trigger default"}}
+tellraw @a[tag=abba_host] {"text": "========================================","color": "#474056"}
+tellraw @a[tag=abba_host] {"text": "[Start]","color": "gold","clickEvent": {"action": "suggest_command","value": "/trigger start_abba set 20"}}
+tellraw @a[tag=abba_host] {"text": "========================================","color": "#474056"}

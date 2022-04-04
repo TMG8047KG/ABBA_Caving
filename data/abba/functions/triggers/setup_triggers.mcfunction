@@ -1,5 +1,5 @@
 #Main triggers
-scoreboard objectives add start_abba trigger 
+scoreboard objectives add start_abba trigger
 scoreboard objectives add end_abba trigger
 
 #Players options
@@ -17,6 +17,9 @@ scoreboard objectives add redstone trigger
 scoreboard objectives add lapis trigger
 scoreboard objectives add diamond trigger
 scoreboard objectives add emerald trigger
+
+#Settings
+scoreboard objectives add default trigger
 
 #Activating the triggers
 function abba:triggers/activate_triggers

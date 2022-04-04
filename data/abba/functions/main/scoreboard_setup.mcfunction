@@ -1,6 +1,8 @@
 #main scoreboards (dummy scoreboards)
 scoreboard objectives add Leaderboard dummy
+scoreboard objectives add start_timer dummy
 scoreboard objectives add timer dummy
+scoreboard players set timer_s timer 0
 
 #Saving the points in dummy scoreboards
 scoreboard objectives add p_coal dummy

@@ -1,0 +1,1 @@
+tellraw @a {"text": "The game ended","color": "dark_red"}
