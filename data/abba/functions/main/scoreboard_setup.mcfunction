@@ -1,8 +1,9 @@
 #main scoreboards (dummy scoreboards)
-scoreboard objectives add Leaderboard dummy
+scoreboard objectives add leaderboard dummy
 scoreboard objectives add start_timer dummy
 scoreboard objectives add timer dummy
 scoreboard players set timer_s timer 0
+scoreboard objectives modify leaderboard displayname {"text": "Leaderboard","color": "gold"}
 
 #Saving the points in dummy scoreboards
 scoreboard objectives add p_coal dummy
@@ -14,7 +15,25 @@ scoreboard objectives add p_redstone dummy
 scoreboard objectives add p_lapis dummy
 scoreboard objectives add p_emerald dummy
 
+scoreboard objectives add ep_coal dummy
+scoreboard objectives add ep_copper dummy
+scoreboard objectives add ep_iron dummy
+scoreboard objectives add ep_gold dummy
+scoreboard objectives add ep_diamond dummy
+scoreboard objectives add ep_redstone dummy
+scoreboard objectives add ep_lapis dummy
+scoreboard objectives add ep_emerald dummy
 
+scoreboard objectives add _coal dummy
+scoreboard objectives add ep_copper dummy
+scoreboard objectives add ep_iron dummy
+scoreboard objectives add ep_gold dummy
+scoreboard objectives add ep_diamond dummy
+scoreboard objectives add ep_redstone dummy
+scoreboard objectives add ep_lapis dummy
+scoreboard objectives add ep_emerald dummy
+
+scoreboard objectives add p_temp dummy
 
 #Scoreboards that counts the mined ores
 scoreboard objectives add b_coal mined:coal_ore

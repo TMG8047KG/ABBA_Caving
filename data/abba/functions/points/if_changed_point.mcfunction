@@ -1,0 +1,1 @@
+#execute unless score @s p_coal = 
