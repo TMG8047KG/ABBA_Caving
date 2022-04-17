@@ -1,6 +1,8 @@
 #Starts the Game
 execute as @a[tag=abba_host] if score @s start_abba matches ..0 run scoreboard players enable @s start_abba
+execute as @a[tag=abba_host] if score @s start_abba matches 1.. run scoreboard players operation timer_m timer = @s start_abba
 execute as @a if score @s start_abba matches 1.. run function abba:main/start
+execute as @a[tag=abba_host] if score @s start_abba matches 1.. run scoreboard players set @s start_abba 0
 
 #Ends the Game
 execute as @a[tag=abba_host] run scoreboard players enable @s end_abba

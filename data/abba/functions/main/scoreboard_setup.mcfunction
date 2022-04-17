@@ -1,6 +1,7 @@
 #main scoreboards (dummy scoreboards)
 scoreboard objectives add leaderboard dummy
 scoreboard objectives add start_timer dummy
+scoreboard players set start start_timer 0
 scoreboard objectives add timer dummy
 scoreboard players set timer_s timer 0
 scoreboard objectives modify leaderboard displayname {"text": "Leaderboard","color": "gold"}
