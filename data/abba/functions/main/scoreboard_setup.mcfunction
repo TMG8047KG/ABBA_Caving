@@ -24,17 +24,6 @@ scoreboard objectives add ep_redstone dummy
 scoreboard objectives add ep_lapis dummy
 scoreboard objectives add ep_emerald dummy
 
-scoreboard objectives add _coal dummy
-scoreboard objectives add ep_copper dummy
-scoreboard objectives add ep_iron dummy
-scoreboard objectives add ep_gold dummy
-scoreboard objectives add ep_diamond dummy
-scoreboard objectives add ep_redstone dummy
-scoreboard objectives add ep_lapis dummy
-scoreboard objectives add ep_emerald dummy
-
-scoreboard objectives add p_temp dummy
-
 #Scoreboards that counts the mined ores
 scoreboard objectives add b_coal mined:coal_ore
 scoreboard objectives add b_d_coal mined:deepslate_coal_ore

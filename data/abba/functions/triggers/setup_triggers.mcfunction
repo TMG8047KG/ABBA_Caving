@@ -1,6 +1,7 @@
 #Main triggers
 scoreboard objectives add start_abba trigger
 scoreboard objectives add end_abba trigger
+scoreboard players set @a start_abba 0
 
 #Players options
 scoreboard objectives add join_abba trigger
@@ -19,7 +20,10 @@ scoreboard objectives add diamond trigger
 scoreboard objectives add emerald trigger
 
 #Settings
+scoreboard objectives add reset trigger
 scoreboard objectives add default trigger
+scoreboard objectives add scoreboard trigger
+scoreboard objectives add show_timer trigger
 
 #Activating the triggers
 function abba:triggers/activate_triggers
