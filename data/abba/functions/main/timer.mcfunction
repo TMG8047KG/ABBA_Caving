@@ -17,7 +17,7 @@ execute if score timer_s timer matches 1 run execute if score timer_m timer matc
 
 
 #Show the time
-execute as @a[tag=playing_abba,scores={show_timer=1..2}] run title @s actionbar [{"score":{"name": "timer_m","objective": "timer"}},{"text": " | "},{"score": {"name": "timer_s","objective": "timer"}}]
+execute as @a[tag=playing_abba,scores={show_timer=1..2}] run title @a[tag=playing_abba] actionbar [{"score":{"name": "timer_m","objective": "timer"}},{"text": " | "},{"score": {"name": "timer_s","objective": "timer"}}]
 
 #Activates every second
 schedule function abba:main/timer 1s
