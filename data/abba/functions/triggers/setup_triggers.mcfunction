@@ -1,9 +1,11 @@
 #Main triggers
+scoreboard objectives add abba_options trigger
 scoreboard objectives add start_abba trigger
 scoreboard objectives add end_abba trigger
 scoreboard players set @a start_abba 0
 
 #Players options
+scoreboard objectives add abba_rules trigger
 scoreboard objectives add join_abba trigger
 scoreboard objectives add leave_abba trigger
 scoreboard players set @a join_abba 0
@@ -26,4 +28,4 @@ scoreboard objectives add scoreboard trigger
 scoreboard objectives add show_timer trigger
 
 #Activating the triggers
-function abba:triggers/activate_triggers
+function abba:triggers/pre_activate

@@ -9,6 +9,16 @@ execute as @a[tag=abba_host] run scoreboard players enable @s end_abba
 execute as @a if score @s end_abba matches 1 run function abba:main/end
 execute as @a if score @s end_abba matches 1 run scoreboard players reset @a end_abba
 
+#Rules
+scoreboard players enable @a[tag=playing_abba] abba_rules
+execute as @a if score @s abba_rules matches 1 run function abba:config/rules
+execute as @a if score @s abba_rules matches 1 run scoreboard players reset @s abba_rules
+
+#Option Menu
+execute as @a[tag=abba_host] run scoreboard players enable @s abba_options
+execute as @a if score @s abba_options matches 1 run function abba:config/config
+execute as @a if score @s abba_options matches 1 run scoreboard players reset @s abba_options
+
 #Join & Leave
 execute as @a[scores={join_abba=..0},tag=!abba_host] run scoreboard players enable @s join_abba
 execute as @a if score @s join_abba matches 1 run scoreboard players enable @s leave_abba
@@ -46,19 +56,21 @@ execute as @a[tag=abba_host] run scoreboard players set @s default 0
 
 #Leaderboard On/Off
 scoreboard players enable @a[tag=abba_host] scoreboard
-execute as @a[tag=abba_host] if score @s scoreboard matches 1 run scoreboard objectives setdisplay sidebar leaderboard
-execute as @a[tag=abba_host] if score @s scoreboard matches 1 run tellraw @s {"text": "Leaderboard is enabled!","color": "dark_green"}
-execute as @a[tag=abba_host] if score @s scoreboard matches 1 run scoreboard players add @s scoreboard 1
-execute as @a[tag=abba_host] if score @s scoreboard matches 3 run scoreboard objectives setdisplay sidebar
-execute as @a[tag=abba_host] if score @s scoreboard matches 3 run tellraw @s {"text": "Leaderboard is disabled!","color": "dark_red"}
-execute as @a[tag=abba_host] if score @s scoreboard matches 3 run scoreboard players set @s scoreboard 0
+execute as @a[tag=abba_host] if score @s scoreboard matches 2 run scoreboard objectives setdisplay sidebar leaderboard
+execute as @a[tag=abba_host] if score @s scoreboard matches 2 run function abba:config/config
+execute as @a[tag=abba_host] if score @s scoreboard matches 2 run scoreboard players add @s scoreboard 1
+execute as @a[tag=abba_host] if score @s scoreboard matches 4 run scoreboard objectives setdisplay sidebar
+execute as @a[tag=abba_host] if score @s scoreboard matches 4 run function abba:config/config
+execute as @a[tag=abba_host] if score @s scoreboard matches 4 run scoreboard players add @s scoreboard 1
+execute as @a[tag=abba_host] if score @s scoreboard matches 6 run scoreboard players set @s scoreboard 2
 
 #Timer On/Off
 scoreboard players enable @a[tag=abba_host] show_timer
-execute as @a[tag=abba_host] if score @s show_timer matches 1 run tellraw @s {"text": "ActionBar Timer is enabled!","color": "dark_green"}
-execute as @a[tag=abba_host] if score @s show_timer matches 1 run scoreboard players add @s show_timer 1
-execute as @a[tag=abba_host] if score @s show_timer matches 3 run tellraw @s {"text": "ActionBar Timer is disabled!","color": "dark_red"}
-execute as @a[tag=abba_host] if score @s show_timer matches 3 run scoreboard players set @s show_timer 0
+execute as @a[tag=abba_host] if score @s show_timer matches 2 run function abba:config/config
+execute as @a[tag=abba_host] if score @s show_timer matches 2 run scoreboard players add @s show_timer 1
+execute as @a[tag=abba_host] if score @s show_timer matches 4 run function abba:config/config
+execute as @a[tag=abba_host] if score @s show_timer matches 4 run scoreboard players add @s show_timer 1
+execute as @a[tag=abba_host] if score @s show_timer matches 6 run scoreboard players set @s show_timer 2
 
 #Executes every game tick
 schedule function abba:triggers/activate_triggers 1t

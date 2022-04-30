@@ -5,5 +5,5 @@ scoreboard players set @a setup_abba 0
 scoreboard players set host host 0
 function abba:setup_trigger
 
-#Alert
+#Dev Alert
 tellraw TMG8047KG {"text": "[ABBA Caving] is loaded!", "color": "gold"}

@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "abba:main/scoreboard_setup",
+        "abba:triggers/setup_triggers"
+    ]
+}
