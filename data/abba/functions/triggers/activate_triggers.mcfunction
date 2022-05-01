@@ -23,12 +23,12 @@ execute as @a if score @s abba_options matches 1 run scoreboard players reset @s
 execute as @a[scores={join_abba=..0},tag=!abba_host] run scoreboard players enable @s join_abba
 execute as @a if score @s join_abba matches 1 run scoreboard players enable @s leave_abba
 execute as @a if score @s join_abba matches 1 run tag @s add playing_abba
+execute as @a if score @s join_abba matches 1 run function abba:config/leave
 execute as @a if score @s join_abba matches 1 run scoreboard players set @s join_abba 2
-execute as @a if score @s join_abba matches 2 run function abba:config/leave
 execute as @a if score @s leave_abba matches 1 run tag @s remove playing_abba
-execute as @a if score @s leave_abba matches 1 run scoreboard players reset @s join_abba
-execute as @a if score @s leave_abba matches 1 run scoreboard players reset @s leave_abba
 execute as @a if score @s leave_abba matches 1 run scoreboard players set @s join_abba 0
+execute as @a if score @s leave_abba matches 1 run function abba:config/join
+execute as @a if score @s leave_abba matches 1 run scoreboard players reset @s leave_abba
 
 #Points Config Triggers
 execute as @a[tag=abba_host] run scoreboard players enable @s coal
