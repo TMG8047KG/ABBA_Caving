@@ -74,6 +74,9 @@ scoreboard objectives remove emerald
 scoreboard objectives remove default
 scoreboard objectives remove scoreboard
 scoreboard objectives remove show_timer
+scoreboard objectives remove abba_options
+scoreboard objectives remove abba_rules
+scoreboard objectives remove reset
 
 #Stoping all functions
 schedule clear abba:points/counting_points
