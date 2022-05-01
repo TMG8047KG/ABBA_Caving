@@ -8,7 +8,7 @@ execute as @a[tag=abba_winner] run title @a[tag=playing_abba] subtitle {"text": 
 
 #Shows everyones points
 scoreboard players reset $max leaderboard
-scoreboard objectives setdisplay sidebar leaderboard
+scoreboard objectives setdisplay sidebar.team.white leaderboard
 
 #Stops counting the points
 schedule clear abba:points/counting_points

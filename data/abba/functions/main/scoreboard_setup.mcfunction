@@ -42,3 +42,8 @@ scoreboard objectives add b_lapis mined:lapis_ore
 scoreboard objectives add b_d_lapis mined:deepslate_lapis_ore
 scoreboard objectives add b_emerald mined:emerald_ore
 scoreboard objectives add b_d_emerald mined:deepslate_emerald_ore
+
+#Abba Team
+team add adda {"text": "ABBA CAVING PLAYERS"}
+team modify adda color white
+team join adda @a[tag=abba_host]
