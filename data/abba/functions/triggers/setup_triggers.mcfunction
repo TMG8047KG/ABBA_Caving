@@ -28,4 +28,4 @@ scoreboard objectives add scoreboard trigger
 scoreboard objectives add show_timer trigger
 
 #Activating the triggers
-function abba:triggers/pre_activate
+schedule function abba:triggers/pre_activate 1s

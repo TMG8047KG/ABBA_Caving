@@ -1,0 +1,8 @@
+{
+     "replace": false,
+     "values": [
+        "abba:triggers/activate_triggers",
+        "abba:config/points/default",
+        "abba:config/points/if_changes"
+     ]
+}

@@ -1,10 +1,7 @@
 #main scoreboards (dummy scoreboards)
 scoreboard objectives add leaderboard dummy
 scoreboard objectives add start_timer dummy
-scoreboard players set start start_timer 0
 scoreboard objectives add timer dummy
-scoreboard players set timer_s timer 0
-scoreboard objectives modify leaderboard displayname {"text": "Leaderboard","color": "gold"}
 
 #Saving the points in dummy scoreboards
 scoreboard objectives add p_coal dummy
@@ -42,6 +39,12 @@ scoreboard objectives add b_lapis mined:lapis_ore
 scoreboard objectives add b_d_lapis mined:deepslate_lapis_ore
 scoreboard objectives add b_emerald mined:emerald_ore
 scoreboard objectives add b_d_emerald mined:deepslate_emerald_ore
+
+#Setting values
+scoreboard players set start start_timer 0
+scoreboard players set timer_s timer 0
+scoreboard objectives modify leaderboard displayname {"text": "Leaderboard","color": "gold"}
+
 
 #Abba Team
 team add adda {"text": "ABBA CAVING PLAYERS"}

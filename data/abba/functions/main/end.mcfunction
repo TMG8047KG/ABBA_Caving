@@ -1,5 +1,5 @@
 #Checks the person with the highest score
-scoreboard players operation $max leaderboard > @a leaderboard
+scoreboard players operation $max leaderboard > @a[tag=playing_abba] leaderboard
 execute as @a if score @s leaderboard = $max leaderboard run tag @s add abba_winner
 
 #Tells who won
