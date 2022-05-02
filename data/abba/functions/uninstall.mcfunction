@@ -3,6 +3,9 @@ tag @a remove abba_host
 tag @a remove playing_abba
 tag @a remove abba_winner
 
+#removes all from their team
+team remove abba
+
 #deleting all main scoreboards
 scoreboard objectives remove host
 scoreboard objectives remove leaderboard

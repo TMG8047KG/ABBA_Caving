@@ -45,8 +45,7 @@ scoreboard players set start start_timer 0
 scoreboard players set timer_s timer 0
 scoreboard objectives modify leaderboard displayname {"text": "Leaderboard","color": "gold"}
 
-
 #Abba Team
-team add adda {"text": "ABBA CAVING PLAYERS"}
-team modify adda color white
-team join adda @a[tag=abba_host]
+team add abba {"text": "ABBA CAVING PLAYERS"}
+team modify abba color white
+team join abba @a[tag=abba_host]

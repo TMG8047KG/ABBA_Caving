@@ -6,7 +6,7 @@ execute as @a[tag=abba_host] if score @s start_abba matches 1.. run scoreboard p
 
 #Ends the Game
 execute as @a[tag=abba_host] run scoreboard players enable @s end_abba
-execute as @a if score @s end_abba matches 1 run function abba:main/end
+execute as @a if score @s end_abba matches 1 run function abba:main/restart
 execute as @a if score @s end_abba matches 1 run scoreboard players reset @a end_abba
 
 #Rules
