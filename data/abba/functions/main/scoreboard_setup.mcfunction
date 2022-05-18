@@ -2,6 +2,7 @@
 scoreboard objectives add leaderboard dummy
 scoreboard objectives add start_timer dummy
 scoreboard objectives add timer dummy
+scoreboard objectives add abba_players dummy
 
 #Saving the points in dummy scoreboards
 scoreboard objectives add p_coal dummy
@@ -41,6 +42,7 @@ scoreboard objectives add b_emerald mined:emerald_ore
 scoreboard objectives add b_d_emerald mined:deepslate_emerald_ore
 
 #Setting values
+scoreboard players set players abba_players 1
 scoreboard players set start start_timer 0
 scoreboard players set timer_s timer 0
 scoreboard objectives modify leaderboard displayname {"text": "Leaderboard","color": "gold"}
@@ -49,3 +51,26 @@ scoreboard objectives modify leaderboard displayname {"text": "Leaderboard","col
 team add abba {"text": "ABBA CAVING PLAYERS"}
 team modify abba color white
 team join abba @a[tag=abba_host]
+
+#========================
+#Setup of all the mined ores that show in the end of the game (scoreboards)
+#========================
+
+scoreboard objectives add end_coal dummy
+scoreboard objectives add end_iron dummy
+scoreboard objectives add end_copper dummy
+scoreboard objectives add end_gold dummy
+scoreboard objectives add end_redstone dummy
+scoreboard objectives add end_lapis dummy
+scoreboard objectives add end_emerald dummy
+scoreboard objectives add end_diamond dummy
+
+scoreboard players set @a end_coal 0
+scoreboard players set @a end_iron 0
+scoreboard players set @a end_copper 0
+scoreboard players set @a end_gold 0
+scoreboard players set @a end_redstone 0
+scoreboard players set @a end_lapis 0
+scoreboard players set @a end_emerald 0
+scoreboard players set @a end_diamond 0
+

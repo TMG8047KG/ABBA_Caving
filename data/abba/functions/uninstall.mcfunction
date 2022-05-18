@@ -11,6 +11,7 @@ scoreboard objectives remove host
 scoreboard objectives remove leaderboard
 scoreboard objectives remove timer
 scoreboard objectives remove start_timer
+scoreboard objectives remove abba_players
 
 #deleting all points saves
 scoreboard objectives remove p_coal
@@ -81,7 +82,17 @@ scoreboard objectives remove abba_options
 scoreboard objectives remove abba_rules
 scoreboard objectives remove reset
 
+scoreboard objectives remove end_coal
+scoreboard objectives remove end_iron
+scoreboard objectives remove end_copper
+scoreboard objectives remove end_gold
+scoreboard objectives remove end_redstone
+scoreboard objectives remove end_lapis
+scoreboard objectives remove end_emerald
+scoreboard objectives remove end_diamond
+
 #Stoping all functions
+schedule clear abba:main/restart
 schedule clear abba:points/counting_points
 schedule clear abba:triggers/activate_triggers
 schedule clear abba:main/add_points

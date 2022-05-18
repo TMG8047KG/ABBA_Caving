@@ -7,8 +7,7 @@ execute as @a[tag=abba_winner] run title @a[tag=playing_abba] title {"selector":
 execute as @a[tag=abba_winner] run title @a[tag=playing_abba] subtitle {"text": "Is the Winner!","color": "#ffcf40"}
 
 #Shows everyones points
-scoreboard players reset $max leaderboard
-scoreboard objectives setdisplay sidebar.team.white leaderboard
+schedule function abba:main/end_results 3s
 
 #Stops counting the points
 schedule clear abba:points/counting_points

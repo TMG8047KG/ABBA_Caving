@@ -4,7 +4,7 @@ execute if score timer_s timer matches 0 run scoreboard players remove timer_m t
 execute if score timer_m timer < timer_temp timer run scoreboard players set timer_s timer 60
 execute if score timer_s timer matches 1.. run scoreboard players remove timer_s timer 1
 execute if score timer_m timer matches 0 run execute if score timer_s timer matches 0 run function abba:main/end
-execute if score timer_m timer matches 0 run execute if score timer_s timer matches 0 run schedule function abba:main/restart 30s
+execute if score timer_m timer matches 0 run execute if score timer_s timer matches 0 run schedule function abba:main/restart 60s
 
 #Alerts
 execute if score timer_m timer matches 5 run execute if score timer_s timer matches 0 run tellraw @a[tag=playing_abba] {"text": "5 minutes left!","color": "gold"}

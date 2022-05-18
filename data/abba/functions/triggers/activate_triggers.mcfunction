@@ -23,6 +23,7 @@ execute as @a if score @s abba_options matches 1 run scoreboard players reset @s
 execute as @a[scores={join_abba=..0},tag=!abba_host] run scoreboard players enable @s join_abba
 execute as @a if score @s join_abba matches 1 run scoreboard players enable @s leave_abba
 execute as @a if score @s join_abba matches 1 run tag @s add playing_abba
+execute as @a if score @s join_abba matches 1 run scoreboard players add players abba_players 1
 execute as @a if score @s join_abba matches 1 run team join abba
 execute as @a if score @s join_abba matches 1 run function abba:config/leave
 execute as @a if score @s join_abba matches 1 run scoreboard players set @s join_abba 2
@@ -57,21 +58,22 @@ execute as @a[tag=abba_host] run scoreboard players set @s default 0
 
 #Leaderboard On/Off
 scoreboard players enable @a[tag=abba_host] scoreboard
+execute as @a[tag=abba_host] if score @s scoreboard matches 1 run function abba:config/config
+execute as @a[tag=abba_host] if score @s scoreboard matches 1 run scoreboard players add @s scoreboard 1
 execute as @a[tag=abba_host] if score @s scoreboard matches 2 run scoreboard objectives setdisplay sidebar.team.white leaderboard
-execute as @a[tag=abba_host] if score @s scoreboard matches 2 run function abba:config/config
 execute as @a[tag=abba_host] if score @s scoreboard matches 2 run scoreboard players add @s scoreboard 1
 execute as @a[tag=abba_host] if score @s scoreboard matches 4 run scoreboard objectives setdisplay sidebar.team.white
 execute as @a[tag=abba_host] if score @s scoreboard matches 4 run function abba:config/config
 execute as @a[tag=abba_host] if score @s scoreboard matches 4 run scoreboard players add @s scoreboard 1
-execute as @a[tag=abba_host] if score @s scoreboard matches 6 run scoreboard players set @s scoreboard 2
+execute as @a[tag=abba_host] if score @s scoreboard matches 6 run scoreboard players set @s scoreboard 1
 
 #Timer On/Off
 scoreboard players enable @a[tag=abba_host] show_timer
-execute as @a[tag=abba_host] if score @s show_timer matches 2 run function abba:config/config
-execute as @a[tag=abba_host] if score @s show_timer matches 2 run scoreboard players add @s show_timer 1
+execute as @a[tag=abba_host] if score @s show_timer matches 1 run function abba:config/config
+execute as @a[tag=abba_host] if score @s show_timer matches 1 run scoreboard players set @s show_timer 3
 execute as @a[tag=abba_host] if score @s show_timer matches 4 run function abba:config/config
 execute as @a[tag=abba_host] if score @s show_timer matches 4 run scoreboard players add @s show_timer 1
-execute as @a[tag=abba_host] if score @s show_timer matches 6 run scoreboard players set @s show_timer 2
+execute as @a[tag=abba_host] if score @s show_timer matches 6 run scoreboard players set @s show_timer 1
 
 #Executes every game tick
 schedule function abba:triggers/activate_triggers 1t
