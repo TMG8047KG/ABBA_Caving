@@ -2,6 +2,8 @@
 tag @a remove abba_host
 tag @a remove playing_abba
 tag @a remove abba_winner
+tag @a remove found
+tag @a remove just_found
 
 #removes all from their team
 team remove abba
