@@ -6,8 +6,10 @@ execute if score start start_timer matches 3 run title @a[tag=playing_abba] titl
 
 #execute as @a[tag=abba_host] if score start start_timer matches 4 run scoreboard players operation timer_m timer = @s start_abba
 execute if score start start_timer matches 4 run function abba:main/timer
+execute if score start start_timer matches 4 run function abba:main/actionbar
 execute if score start start_timer matches 4 run function abba:main/add_points
 execute if score start start_timer matches 4 run function abba:points/counting_points
+execute if score start start_timer matches 4 run scoreboard players set @a leaderboard 0
 execute if score start start_timer matches 4 run title @a[tag=playing_abba] title {"text": "Start!","color": "gold"}
 
 execute if score start start_timer matches 4 run schedule clear abba:main/start

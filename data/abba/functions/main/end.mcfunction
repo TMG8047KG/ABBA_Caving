@@ -1,6 +1,7 @@
 #Checks the person with the highest score
 scoreboard players operation $max leaderboard > @a[tag=playing_abba] leaderboard
 execute as @a if score @s leaderboard = $max leaderboard run tag @s add abba_winner
+scoreboard players reset $max leaderboard
 
 #Tells who won
 execute as @a[tag=abba_winner] run title @a[tag=playing_abba] title {"selector":"@s","color": "gold"}

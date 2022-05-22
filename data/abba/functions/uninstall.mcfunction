@@ -4,6 +4,8 @@ tag @a remove playing_abba
 tag @a remove abba_winner
 tag @a remove found
 tag @a remove just_found
+tag @a remove first_join_m
+tag @a remove first_leave_m
 
 #removes all from their team
 team remove abba
@@ -102,3 +104,13 @@ schedule clear abba:setup_trigger
 schedule clear abba:config/points/if_changes
 schedule clear abba:main/start
 schedule clear abba:main/timer
+schedule clear abba:main/actionbar
+
+schedule clear abba:config/end_points/epc
+schedule clear abba:config/end_points/epi
+schedule clear abba:config/end_points/epcp
+schedule clear abba:config/end_points/epg
+schedule clear abba:config/end_points/epr
+schedule clear abba:config/end_points/epl
+schedule clear abba:config/end_points/epe
+schedule clear abba:config/end_points/epd
