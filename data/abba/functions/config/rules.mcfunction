@@ -12,8 +12,3 @@ execute as @a if score @s abba_rules matches 1 run tellraw @s {"text": "        
 execute as @a if score @s abba_rules matches 1 run tellraw @s [{"text": " "},{"text": "- All players must have ","color": "#aba9bf"},{"text": "Swiftness","color": "#3f8dd1"},{"text": ", ","color": "#aba9bf"},{"text": "Night Vision","color": "#0f2ba6"},{"text": " and ","color": "#aba9bf"},{"text": "Fire Resistance","color": "#FFD700"}]
 execute as @a if score @s abba_rules matches 1 run tellraw @s [{"text": " "},{"text": "- All players must have ","color": "#aba9bf"},{"text": "Efficiency 5","color": "#A94CAA","hoverEvent": {"action": "show_item","contents": {"count": 1,"id": "netherite_pickaxe","tag": "{Enchantments:[{id:efficiency,lvl:5}]}"}}}]
 execute as @a if score @s abba_rules matches 1 run tellraw @s {"text": "                                                                                ","color": "#474056","strikethrough": true}
-# execute as @a if score @s abba_rules matches 1 run tellraw @s {"text": ""}
-# execute as @a if score @s abba_rules matches 1 run tellraw @s {"text": ""}
-# execute as @a if score @s abba_rules matches 1 run tellraw @s {"text": ""}
-# execute as @a if score @s abba_rules matches 1 run tellraw @s {"text": ""}
-# execute as @a if score @s abba_rules matches 1 run tellraw @s {"text": "                                                                                ","color": "#474056","strikethrough": true}

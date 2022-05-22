@@ -24,12 +24,15 @@ execute as @a[scores={join_abba=..0},tag=!abba_host] run scoreboard players enab
 execute as @a if score @s join_abba matches 1 run scoreboard players enable @s leave_abba
 execute as @a if score @s join_abba matches 1 run tag @s add playing_abba
 execute as @a if score @s join_abba matches 1 run scoreboard players add players abba_players 1
+execute as @a if score @s join_abba matches 1 run tellraw @a[tag=abba_host] [{"text": ""},{"selector":"@s","color": "#ffcf40"},{"text": " joined the ABBA!","color": "#ffcf40"}]
 execute as @a if score @s join_abba matches 1 run team join abba
 execute as @a if score @s join_abba matches 1 run function abba:config/leave
 execute as @a if score @s join_abba matches 1 run scoreboard players set @s join_abba 2
 execute as @a if score @s leave_abba matches 1 run tag @s remove playing_abba
 execute as @a if score @s leave_abba matches 1 run tag @s add left_abba
 execute as @a if score @s leave_abba matches 1 run tag @s remove first_leave_m
+execute as @a if score @s leave_abba matches 1 run tellraw @a[tag=abba_host] [{"text": ""},{"selector":"@s","color": "#ffcf40"},{"text": " left the ABBA!","color": "#ffcf40"}]
+execute as @a if score @s leave_abba matches 1 run scoreboard players remove players abba_players 1
 execute as @a if score @s leave_abba matches 1 run scoreboard players set @s join_abba 0
 execute as @a if score @s leave_abba matches 1 run function abba:config/join
 execute as @a if score @s leave_abba matches 1 run scoreboard players reset @s leave_abba
